@@ -62,4 +62,15 @@ p {
 
 .globe {
   background-image: url('globe.jpg');
+  background-size: cover;
+  animation: zoomOut 15s ease-in-out infinite alternate;
+}
+
+@keyframes zoomOut {
+  from {
+    background-size: 120%;
+  }
+  to {
+    background-size: 100%;
+  }
 }
